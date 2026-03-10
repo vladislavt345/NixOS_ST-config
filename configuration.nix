@@ -40,7 +40,12 @@
   };
 
   programs.hyprland.enable = true;
-  programs.niri.enable = true;
+  programs.ssh = {
+    startAgent = true;
+    extraConfig = ''
+      AddKeysToAgent yes
+      '';
+  };
 
   services.pipewire = {
 	enable = true;
@@ -85,12 +90,12 @@ security.pam.loginLimits = [
   #   keyMap = "us";
   #   useXkbConfig = true; # use xkb.options in tty.
   # };
-  
+
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
 
 
-  
+
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
@@ -172,4 +177,3 @@ security.pam.loginLimits = [
   system.stateVersion = "25.11"; # Did you read the comment?
 
 }
-
