@@ -8,7 +8,9 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./hyprland.nix
+      ./features/hyprland
+      ./features/waybar
+      ./features/kitty
     ];
 
   # Use the GRUB 2 boot loader.
