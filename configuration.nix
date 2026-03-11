@@ -11,6 +11,7 @@
       ./features/hyprland
       ./features/waybar
       ./features/kitty
+      ./features/zsh
     ];
 
   # Use the GRUB 2 boot loader.
