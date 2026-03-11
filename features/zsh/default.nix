@@ -9,7 +9,7 @@
     };
   };
 
-  users.defaultShell = pkgs.zsh;
+  users.users.stryer.shell = pkgs.zsh;
 
   environment.systemPackages = with pkgs; [
     zsh-autosuggestions
