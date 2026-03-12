@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./features/hyprland
+      ./features/niri
       ./features/waybar
       ./features/kitty
       ./features/zsh
@@ -49,7 +50,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland";
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd niri-session";
         user = "greeter";
       };
     };
@@ -69,7 +70,7 @@
 
   xdg.portal = {
 	enable = true;
-	extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+	extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-hyprland pkgs.xdg-desktop-portal-gnome ];
   };
 
 #vm
@@ -92,6 +93,8 @@
 	telegram-desktop
 	zed-editor
 	flameshot
+	fuzzel
+	noctalia-shell
 ];
 
 security.pam.loginLimits = [
