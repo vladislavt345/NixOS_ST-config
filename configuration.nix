@@ -10,7 +10,6 @@
       ./hardware-configuration.nix
       ./features/hyprland
       ./features/niri
-      ./features/waybar
       ./features/kitty
       ./features/zsh
     ];
@@ -90,7 +89,6 @@
 	curl
 	kitty
 	walker
-	waybar
 	btop
 	fastfetch
 	firefox
