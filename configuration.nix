@@ -2,7 +2,7 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 {
   imports =
@@ -94,6 +94,7 @@
 	zed-editor
 	flameshot
 	fuzzel
+	inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
 ];
 
 security.pam.loginLimits = [
@@ -190,6 +191,8 @@ security.pam.loginLimits = [
   # and migrated your data accordingly.
   #
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   system.stateVersion = "25.11"; # Did you read the comment?
 
 }
