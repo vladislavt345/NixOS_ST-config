@@ -50,6 +50,7 @@ layout {
     }
 }
 
+spawn-at-startup "swaybg" "-i" "/etc/nixos/features/niri/wallpaper.jpg" "-m" "fill"
 spawn-at-startup "waybar"
 spawn-at-startup "noctalia-shell"
 

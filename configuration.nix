@@ -23,6 +23,10 @@
   # Define on which hard drive you want to install Grub.
   boot.loader.grub.device = "/dev/vda"; # or "nodev" for efi only
 
+  swapDevices = [
+    { device = "/swapfile"; size = 16384; }
+  ];
+
   networking.hostName = "nixos"; # Define your hostname.
 
   # Configure network connections interactively with nmcli or nmtui.
