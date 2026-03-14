@@ -88,6 +88,8 @@
     LIBGL_ALWAYS_SOFTWARE = "1";
   };
 #---
+ nixpkgs.config.allowUnfree = true;
+
  environment.systemPackages = with pkgs; [
 	vim
 	git
@@ -102,6 +104,12 @@
 	zed-editor
 	flameshot
 	fuzzel
+	google-chrome
+	vscode
+	discord
+	obsidian
+	yazi
+	inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 	inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
 ];
 
