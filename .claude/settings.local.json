@@ -19,7 +19,20 @@
       "Bash(sudo git -C /etc/nixos remote -v)",
       "Bash(sudo git -C /etc/nixos config --list)",
       "Bash(git -C /etc/nixos remote -v)",
-      "Bash(git -C /etc/nixos remote add origin git@github.com:vladislavt345/NixOS_ST-config.git)"
+      "Bash(git -C /etc/nixos remote add origin git@github.com:vladislavt345/NixOS_ST-config.git)",
+      "Read(//home/stryer/.config/niri/**)",
+      "Bash(journalctl --user -b -n 50 --no-pager)",
+      "Bash(git add features/niri/default.nix)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(nix search nixpkgs zen-browser)",
+      "Bash(nix search nixpkgs nekobox)",
+      "Bash(nix search nixpkgs google-chrome)",
+      "Bash(nix-env -qaP)",
+      "WebSearch",
+      "WebFetch(domain:search.nixos.org)",
+      "Bash(git -C /etc/nixos add .)",
+      "Bash(git -C /etc/nixos status)"
     ]
   }
 }
