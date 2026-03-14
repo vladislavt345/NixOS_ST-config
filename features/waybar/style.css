@@ -1,0 +1,117 @@
+/* Waybar — Transparent SaaS Black & White theme */
+
+* {
+    font-family: "JetBrains Mono", "Font Awesome 6 Free";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(18, 18, 18, 0.75);
+    color: #d4d4d4;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+tooltip {
+    background-color: rgba(24, 24, 24, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #d4d4d4;
+}
+
+#custom-nixos {
+    font-size: 16px;
+    color: #7eb5e3;
+    padding: 0 10px 0 8px;
+    margin: 4px 0;
+}
+
+#workspaces {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    padding: 2px 4px;
+    margin: 4px 0;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    min-width: 24px;
+    color: #5a5a5a;
+    background-color: transparent;
+    border-radius: 8px;
+    margin: 1px 2px;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+#workspaces button:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #b0b0b0;
+}
+
+#workspaces button.empty {
+    color: #3a3a3a;
+}
+
+#workspaces button.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #e8e8e8;
+    border-radius: 8px;
+}
+
+#window {
+    color: #a0a0a0;
+    font-weight: 500;
+}
+
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray {
+    padding: 0 10px;
+    color: #b0b0b0;
+}
+
+#clock {
+    color: #d4d4d4;
+    font-weight: 600;
+}
+
+#cpu {
+    color: #a0a0a0;
+}
+
+#memory {
+    color: #a0a0a0;
+}
+
+#network {
+    color: #b0b0b0;
+}
+
+#network.disconnected {
+    color: #6a6a6a;
+}
+
+#pulseaudio {
+    color: #b0b0b0;
+}
+
+#pulseaudio.muted {
+    color: #5a5a5a;
+}
+
+#tray {
+    color: #8a8a8a;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    color: #d4d4d4;
+}
