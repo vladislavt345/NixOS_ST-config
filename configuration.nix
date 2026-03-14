@@ -81,6 +81,12 @@
   services.qemuGuest.enable = true;
   services.spice-vdagentd.enable = true;
   hardware.graphics.enable = true;
+  services.openssh.enable = true;
+  networking.firewall.allowedTCPPorts = [ 22 ];
+  environment.sessionVariables = {
+    WLR_NO_HARDWARE_CURSORS = "1";
+    WLR_RENDERER = "pixman";
+  };
 #---
  environment.systemPackages = with pkgs; [
 	vim
