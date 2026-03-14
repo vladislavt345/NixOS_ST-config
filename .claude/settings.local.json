@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__acp__Bash",
+      "mcp__acp__Write",
+      "mcp__acp__Edit",
+      "WebFetch(domain:4kwallpapers.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:docs.noctalia.dev)",
+      "WebFetch(domain:mynixos.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:wallpaperaccess.com)",
+      "WebFetch(domain:www.wallpaperflare.com)",
+      "WebFetch(domain:alphacoders.com)",
+      "WebFetch(domain:wall.alphacoders.com)",
+      "WebFetch(domain:wallpapercave.com)",
+      "WebFetch(domain:unsplash.com)",
+      "Bash(gh auth status)",
+      "Bash(sudo git -C /etc/nixos remote -v)",
+      "Bash(sudo git -C /etc/nixos config --list)",
+      "Bash(git -C /etc/nixos remote -v)",
+      "Bash(git -C /etc/nixos remote add origin git@github.com:vladislavt345/NixOS_ST-config.git)"
+    ]
+  }
+}
