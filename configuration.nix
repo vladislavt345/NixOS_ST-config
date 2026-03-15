@@ -12,6 +12,7 @@
       ./features/niri
       ./features/kitty
       ./features/zsh
+      ./features/deep_filter
     ];
 
   # Use the GRUB 2 boot loader.
@@ -40,6 +41,7 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
+  i18n.extraLocaleSettings.LC_TIME = "en_GB.UTF-8";
 
   users.users.stryer = {
     isNormalUser = true;
@@ -109,6 +111,7 @@
 	discord
 	obsidian
 	yazi
+	nekoray
 	inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
 	inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
 ];
