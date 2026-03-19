@@ -104,23 +104,6 @@
 	git
 	wget
 	curl
-	kitty
-	walker
-	btop
-	fastfetch
-	firefox
-	telegram-desktop
-	zed-editor
-	flameshot
-	fuzzel
-	google-chrome
-	vscode
-	discord
-	obsidian
-	yazi
-	nekoray
-	inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-	inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
 ];
 
 security.pam.loginLimits = [

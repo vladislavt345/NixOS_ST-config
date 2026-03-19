@@ -6,6 +6,7 @@
     ./features/git
     ./features/hyprland
     ./features/kitty
+    ./features/packages
     ./features/waybar
     ./features/zsh
   ];
