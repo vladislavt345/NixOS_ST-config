@@ -3,6 +3,7 @@
 {
   imports = [
     ./features/fonts
+    ./features/git
     ./features/hyprland
     ./features/kitty
     ./features/waybar
