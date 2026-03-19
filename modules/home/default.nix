@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./features/fonts
     ./features/hyprland
     ./features/kitty
     ./features/waybar
