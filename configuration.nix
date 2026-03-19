@@ -8,11 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./features/hyprland
-      ./features/niri
-      ./features/kitty
-      ./features/zsh
-      ./features/deep_filter
+      ./modules/system/features/niri
+      ./modules/system/features/deep_filter
     ];
 
   # Use the GRUB 2 boot loader.
@@ -47,7 +44,10 @@
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "video" "input" ];
     initialPassword = "1234";
+    shell = pkgs.zsh;
   };
+
+  programs.zsh.enable = true;
 
   programs.hyprland.enable = true;
   programs.nix-ld.enable = true;
