@@ -51,6 +51,12 @@
 
   programs.hyprland.enable = true;
   programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    libcap
+    xz
+    openssl
+    zlib
+  ];
 
   services.greetd = {
     enable = true;
