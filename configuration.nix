@@ -104,6 +104,7 @@
 	git
 	wget
 	curl
+	nh
 ];
 
 security.pam.loginLimits = [
