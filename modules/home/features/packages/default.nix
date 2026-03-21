@@ -28,6 +28,7 @@
     # productivity
     obsidian
     flameshot
+    nautilus
 
     # other
     nekoray
