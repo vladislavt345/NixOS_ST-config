@@ -31,7 +31,7 @@
     nautilus
 
     # other
-    nekoray
+    throne
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
